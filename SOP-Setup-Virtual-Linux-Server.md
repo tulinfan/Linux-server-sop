@@ -107,14 +107,14 @@ run the command：
 
 ---
 
-### **Step 6:  Install LAMP Stack**
+### **Step 6: Install LAMP Stack**
 run the command：
 
 ```sudo apt install apache2 mysql-server php php-mysql -y```
 
 ---
 
-### **Step 7:   Verify Apache Web Service **
+### **Step 7: Verify Apache Web Service **
 Check Apache status using:
 
 ```systemctl status apache2```
@@ -123,7 +123,7 @@ Check Apache status using:
 
 ---
 
-### **Step 8:   Create and Test PHP Info Page  **
+### **Step 8:  Create and Test PHP Info Page  **
 Run the command:
 
 echo '<?php echo "PHP is working!"; ?>' | sudo tee /var/www/html/info.php```
@@ -134,7 +134,7 @@ echo '<?php echo "PHP is working!"; ?>' | sudo tee /var/www/html/info.php```
 
 ---
 
-### **Reference or Related Documents  **
+### Reference or Related Documents  
 
 
 
