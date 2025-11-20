@@ -7,6 +7,9 @@ NSA-W25 Ltd.
 ## Company or department phone number
 204-XXX-XXXX
 ## Reversion info: 
+Version: 1.0 
+
+Last Updated: 2025-11-19
 
 
 ## Approved Table: 
