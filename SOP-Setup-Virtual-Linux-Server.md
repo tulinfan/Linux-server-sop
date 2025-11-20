@@ -96,11 +96,11 @@ This document includes:
 ### **Step 4: System Updates and Tools**
 Run updates:
 
-```bash
-sudo apt update && sudo apt upgrade -y
-
+```sudo apt update && sudo apt upgrade -y```
 ---
 
-### **Step5: System Updates and Tools**
+### **Step 4: System Updates and Tools**
+
+
 
 
