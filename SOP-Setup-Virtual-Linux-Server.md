@@ -118,6 +118,17 @@ run the command：
 Check Apache status using:
 
 ```systemctl status apache2```
+>Open a browser and enter:\(http://localhost)
+
+
+---
+
+### **Step 8:   Create and Test PHP Info Page  **
+Run the command:
+
+echo '<?php echo "PHP is working!"; ?>' | sudo tee /var/www/html/info.php
+```
+>Verify output by visiting:\(http://localhost/info.php)
 
 
 
