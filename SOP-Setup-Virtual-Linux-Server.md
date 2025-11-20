@@ -111,9 +111,8 @@ run the command：
 run the command：
 
 ```sudo apt install nginx -y
-sudo systemctl enable nginx
-sudo systemctl start nginx
-```
+   sudo systemctl enable nginx
+   sudo systemctl start nginx```
 
 
 
