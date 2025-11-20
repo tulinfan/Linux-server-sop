@@ -13,8 +13,7 @@ NSA-W25 Ltd.
 | __Version__ | **Date** | __Name__ | **Designation** |
 |:---------|------:|:------:|:-------------|
 | 1.0 | 2025-11-19 | Linfan | Submitter |
-**Version:** 1.0  
-**Date:** 2025-11-19  
+ 
 
 ---
 
