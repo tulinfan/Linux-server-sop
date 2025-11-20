@@ -107,12 +107,17 @@ run the command：
 
 ---
 
-### **Step 6: Install Web Test Environment (Nginx + PHP)**
+### **Step 6:  Install LAMP Stack**
 run the command：
 
-```sudo apt install nginx -y
-   sudo systemctl enable nginx
-   sudo systemctl start nginx```
+```sudo apt install apache2 mysql-server php php-mysql -y```
+
+---
+
+### **Step 7:   Verify Apache Web Service **
+Check Apache status using:
+```systemctl status apache2```
+
 
 
 
