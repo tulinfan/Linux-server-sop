@@ -116,6 +116,7 @@ run the command：
 
 ### **Step 7:   Verify Apache Web Service **
 Check Apache status using:
+
 ```systemctl status apache2```
 
 
