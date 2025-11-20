@@ -1,5 +1,18 @@
 # Standard Operating Procedure (SOP)
 ## Setup a Virtual Linux Server for Web Application Testing
+## Company name
+NSA-W25 Ltd.
+## Company street address 
+130 Henlow Bay, Winnipeg, MB, Canada
+## Company or department phone number
+204-XXX-XXXX
+## Reversion info: 
+
+
+## Approved Table: 
+| __Version__ | **Date** | __Name__ | **Designation** |
+|:---------|------:|:------:|:-------------|
+| 1.0 | 2025-11-19 | Linfan | Submitter |
 **Version:** 1.0  
 **Date:** 2025-11-19  
 
