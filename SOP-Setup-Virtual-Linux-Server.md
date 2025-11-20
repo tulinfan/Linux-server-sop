@@ -97,9 +97,14 @@ This document includes:
 Run updates:
 
 ```sudo apt update && sudo apt upgrade -y```
+
 ---
 
-### **Step 4: System Updates and Tools**
+### **Step 5: Install common tools**
+run the command：
+
+```sudo apt install net-tools curl git unzip -y```
+
 
 
 
