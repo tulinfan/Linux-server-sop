@@ -98,7 +98,11 @@ Run updates:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-**Step 5:** Update System Packages  
+
+
+---
+
+###**Step 5:** Update System Packages  
 Run the following command in the terminal:
 ```
 sudo apt update && sudo apt upgrade -y
