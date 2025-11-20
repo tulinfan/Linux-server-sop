@@ -105,6 +105,17 @@ run the command：
 
 ```sudo apt install net-tools curl git unzip -y```
 
+---
+
+### **Step 6: Install Web Test Environment (Nginx + PHP)**
+run the command：
+
+```sudo apt install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+```
+
+
 
 
 
