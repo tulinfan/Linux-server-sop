@@ -98,5 +98,15 @@ Run updates:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-Install basic tools:
-sudo apt install net-tools curl git unzip -y
+
+---
+
+### **Step 5: Install Web Test Environment (Nginx + PHP)**
+Install the required packages by running:
+
+
+```bash
+sudo apt install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
