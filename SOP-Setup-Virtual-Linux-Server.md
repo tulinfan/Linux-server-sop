@@ -53,48 +53,67 @@ This document includes:
 
 ---
 
-### **Step 1: Pre-Setup Preparation**
-1. Download the Ubuntu Server 22.04 LTS ISO file from the official Ubuntu website.
-2. Ensure VMware Workstation is installed.
-3. Recommended VM resources:
-   - **CPU**: 2 cores  
-   - **RAM**: 4 GB  
-   - **Disk**: 25 GB  
-   - **Network**: NAT or Bridged  
+### Step 1: Pre-deployment Planning and Assessment
 
----
+#### Step 1.1: Define Testing Requirements
+- Determine the specific web application testing needs (functional, performance, security, etc.)
+- Identify required testing frameworks and tools
+- Estimate expected user load and performance requirements
 
-### **Step 2: Create a Virtual Machine in VMware Workstation**
-1. Open **VMware Workstation** → Click **Create a New Virtual Machine**.
-2. Select **Typical (recommended)**.
-3. Choose **Installer disc image (ISO)** and select the Ubuntu 22.04 ISO.
-4. Choose guest OS type: **Linux → Ubuntu 64-bit**.
-5. Set VM name, e.g., `web-test-ubuntu`.
-6. Allocate **25 GB** disk space.
-7. Customize hardware:
-   - Memory → 4096 MB  
-   - Processors → 2 cores  
-   - Network Adapter → NAT  
-8. Finish and power on the VM.
+#### Step 1.2: Plan Resource Allocation
+- Allocate 4 vCPU cores, 8GB RAM, and 50GB storage for optimal performance
+- Select high-performance datastore with SSD storage
+- Plan for network configuration with static IP assignment
+- Reserve hostname: `web-test-app-01`
 
----
+#### Step 1.3: Stakeholder Communication
+- Coordinate with development team for specific testing requirements
+- Consult with security team for compliance requirements
+- Confirm testing schedule with QA team
 
-### **Step 3: Install Ubuntu Server 22.04**
-1. Select **Install Ubuntu Server**.
-2. Choose language and keyboard settings.
-3. Network configuration:
-   - Default DHCP, or  
-   - Configure static IP if required.
-4. Enter hostname: `web-test-01`.
-5. Create user (example: `student`).
-6. Choose default storage layout.
-7. Enable **OpenSSH Server**.
-8. Reboot after installation completes.
+### Step 2: Virtual Machine Creation and Configuration
 
----
+#### Step 2.1: Access Virtualization Platform
+- Login to VMware vSphere Client or equivalent hypervisor management console
+- Navigate to the appropriate cluster or host for test environments
 
-### **Step 4: System Updates and Tools**
-Run updates:
+#### Step 2.2: Create New Virtual Machine
+- Select "Create New Virtual Machine"
+- Choose compatibility: ESXi 7.0 and later
+- Guest OS family: Linux
+- Guest OS version: Ubuntu Linux (64-bit)
 
+#### Step 2.3: Configure Virtual Machine Settings
+- Name: `web-test-app-01`
+- Location: `[Your Datacenter]/Test Environment/`
+- CPU: 4 vCPUs
+- Memory: 8192 MB RAM
+- Hard disk: 50 GB (Thin Provisioning)
+- Network: `Test-Network` VLAN
+- CD/DVD: Connect to Ubuntu 22.04 LTS ISO file
+
+### Step 3: Ubuntu Server Installation
+
+#### Step 3.1: Start Installation
+- Power on the virtual machine
+- Boot from Ubuntu 22.04 LTS installation media
+- Select "Ubuntu Server" installation type
+
+#### Step 3.2: Configure Operating System
+- Keyboard layout: US English
+- Network configuration:
+  - Hostname: `web-test-app-01`
+  - Domain: `test.company.com`
+- User account:
+  - Username: `testadmin`
+  - Full name: `Test Administrator`
+  - Password: `[Secure Password]`
+- Partition disks: Use entire disk with LVM
+- Profile setup: Install OpenSSH server
+
+### Step 4: Essential Software Stack Installation
+
+#### Step 4.1: Update System and Install Base Packages
 ```bash
 sudo apt update && sudo apt upgrade -y
+sudo apt install -y curl wget vim git unzip net-tools
