@@ -98,3 +98,31 @@ Run updates:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+**Step 5:** Update System Packages  
+Run the following command in the terminal:
+```
+sudo apt update && sudo apt upgrade -y
+```
+
+__Step 6:__ Install LAMP Stack  
+Install the required packages by running:
+```
+sudo apt install apache2 mysql-server php php-mysql -y
+```
+
+**Step 7:** Verify Apache Web Service  
+Check Apache status using:
+```
+systemctl status apache2
+```
+
+>Open a browser and enter:\(http://localhost)
+
+**Step 8:** Create and Test PHP Info Page 
+
+Run the command:
+```
+echo '<?php echo "PHP is working!"; ?>' | sudo tee /var/www/html/info.php
+```
+
+>Verify output by visiting:\(http://localhost/info.php)
